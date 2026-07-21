@@ -45,8 +45,6 @@ source database/schema.sql;
 Copy-Item backend\src\main\resources\application.example.yml backend\src\main\resources\application.yml
 ```
 
-`application.yml` 包含本机数据库密码，不要提交到 GitHub；项目已在 `.gitignore` 中忽略该文件。提交到仓库的只有 `application.example.yml` 模板。
-
 ## 启动后端
 
 先确认 MySQL 已启动，并且 `application.yml` 中的 MySQL 账号密码正确。
@@ -86,14 +84,6 @@ frontend/Dockerfile
 frontend/nginx.conf
 docker-compose.yml
 ```
-
-首次启动前在项目根目录手动创建本地 `.env` 文件，至少填写 MySQL root 密码：
-
-```env
-MYSQL_ROOT_PASSWORD=your-local-mysql-password
-```
-
-`.env` 是本机配置文件，不要提交到 GitHub。
 
 启动服务：
 
