@@ -1,0 +1,9 @@
+target
+data
+maven-repo
+*.log
+*.pid
+*.tmp
+.env
+.env.*
+*.local

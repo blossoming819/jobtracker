@@ -1,0 +1,52 @@
+# Build outputs
+backend/target/
+frontend/dist/
+
+# Dependencies and package-manager caches
+frontend/node_modules/
+node_modules/
+.npm/
+.pnpm-store/
+
+# TypeScript / Vite cache
+frontend/tsconfig.tsbuildinfo
+
+# Local runtime data and uploads
+data/
+backend/data/
+frontend/data/
+
+# Local Maven configuration / repository
+backend/settings.xml
+backend/maven-repo/
+backend/.mvn/local-repo/
+
+# Local Spring Boot profile; keep the example template tracked.
+backend/src/main/resources/application.yml
+!backend/src/main/resources/application.example.yml
+
+# Logs and temporary files
+*.log
+*.pid
+*.tmp
+*.temp
+backend/startup-check.*.log
+
+# Environment files
+.env
+.env.*
+*.local
+
+# IDE / editor / tooling
+.idea/
+.vscode/
+.agents/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Accidental root lockfile; keep frontend/package-lock.json tracked.
+/package-lock.json
